@@ -25,6 +25,6 @@ class StationTest < ActiveSupport::TestCase
   end
 
   test "name" do
-    assert_equal Station.name(0), 'Chennai Beach'
+    assert_equal 'Chennai Beach', Station.name(1)
   end
 end

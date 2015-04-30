@@ -7,12 +7,12 @@
 
 <p>
   <strong>From station:</strong>
-  <%= @ticket.from_station_id %>
+  <%= Station.name @ticket.from_station_id %>
 </p>
 
 <p>
   <strong>To station:</strong>
-  <%= @ticket.to_station_id %>
+  <%= Station.name @ticket.to_station_id %>
 </p>
 
 <p>

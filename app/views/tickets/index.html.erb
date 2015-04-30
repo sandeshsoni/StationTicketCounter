@@ -18,8 +18,8 @@
     <% @tickets.each do |ticket| %>
       <tr>
         <td><%= ticket.passenger_name %></td>
-        <td><%= ticket.from_station_id %></td>
-        <td><%= ticket.to_station_id %></td>
+        <td><%= Station.name ticket.from_station_id %></td>
+        <td><%= Station.name ticket.to_station_id %></td>
         <td><%= ticket.journey_date %></td>
         <td><%= ticket.fare %></td>
         <td><%= link_to 'Show', ticket %></td>

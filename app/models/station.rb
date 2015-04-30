@@ -24,11 +24,11 @@ class Station
   # needs fix. Should be enum
 
   def self.name(key)
-    STATIONS[key]
+    STATIONS[key - 1]
   end
 
   def self.list
-    STATIONS
+    STATIONS.each_with_index.map { |x,i| [x, i + 1] }
   end
 
 end

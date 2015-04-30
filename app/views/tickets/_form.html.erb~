@@ -27,6 +27,10 @@
     <%= f.label :journey_date %><br>
     <%= f.datetime_select :journey_date %>
   </div>
+  <div class="field">
+    <%= f.label :fare %><br>
+    <%= f.number_field :fare %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
